@@ -1,0 +1,9 @@
+div {
+    background-color: lightblue;
+}
+
+body {
+   background-image:url('{{ STATIC_URL }}css/tree.jpg');
+   background-repeat:no-repeat;
+   background-size:100%;
+}

@@ -1,0 +1,125 @@
+{% extends "newApp/base.html" %}
+{% block body_block %}
+<!DOCTYPE html>
+{% load staticfiles %}
+
+ <!--<h3> Welcome to my website! {{ injectme }}</h3> -->
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+         <link rel="stylesheet" href="css/icon-font.css">
+         <link rel="stylesheet" href="{% static "css/style.css" %}" />
+         <link rel="shortcut icon" type="image/png" href="{% static "img/favicon.png" %}" />
+
+         <title>My profile</title>
+     </head>
+     <body>
+         <header class="header">
+             <div class="header__logo-box">
+                <!-- <img src="{% static "img/l.png" %}" alt="uh, oh!" classs="header__logo"> -->
+             </div>
+             <div class="header__text-box">
+                 <h1 class="heading-primary">
+                 <span class="heading-primary--main">Welcome!</span>
+                 <span class="heading-primary--sub">Hi, this is me, Ara Lena</span>
+             </h1>
+                 <a href="#" class="btn btn--white btn--animated">Discover!</a>
+             </div>
+         </header>
+         <main>
+           <section class="section-about">
+               <div class="u-center-text u-margin-bottom-big">
+                   <h2 class="heading-secondary">
+                       Me and my favourite thoughts!
+                   </h2>
+               </div>
+
+               <div class="row">
+                   <div class="col-1-of-2">
+                       <h3 class="heading-tertiary u-margin-bottom-small">Welcome to my profile guest!</h3>
+                       <p class="paragraph">
+                           Hi, I am Lena Ara. I am a masters student at Purdue School of Engineering & Technology, IUPUI, Indianapolis. My research area includes machine learning for
+                           network behavior, specifically finding recursive ways to detect clusters after training the model. I work part time as Web Interface Programmer at Institute for American Thought, IUPUI. Please scroll down to download my resume.
+                       </p>
+
+                       <h3 class="heading-tertiary u-margin-bottom-small">Hobbies!</h3>
+                       <p class="paragraph">
+                           I love tapping my feet to the dance beats. My favorite dance forms are freestyle, hip-hop and sometimes Indian Classical Dance Kathak. :) Apart from dancing I like reading inspirational books.
+                       </p>
+
+
+                   </div>
+                   <div class="col-1-of-2">
+                       <div class="composition">
+                           <img src="{% static "img/my_1.jpg" %}" alt="Photo 1" class="composition__photo composition__photo--p1">
+                           <img src="{% static "img/my_2.jpg" %}" alt="Photo 2" class="composition__photo composition__photo--p2">
+                           <img src="{% static "img/my_3.jpg" %}" alt="Photo 3" class="composition__photo composition__photo--p3">
+                       </div>
+                   </div>
+               </div>
+               <div class="u-center-text u-margin-top-huge">
+                <!-- <li><a href="../MyProfile/dance.html">Dancing</a></li>
+                   <a href="#" class="btn-text">Photo Gallery</a> -->
+               </div>
+           </section>
+
+           <section class="section-features">
+
+               <div class="row">
+                   <div class="col-1-of-4">
+                       <div class="feature-box">
+                           <i class="feature-box__icon icon-basic-world"></i>
+                           <i><h3 class="heading-tertiary u-margin-bottom-small">A.P.J. Abdul Kalam</h3></i>
+                           <p class="feature-box__text">
+                               <i>The bird is powered by its own life and by its motivation. </i><br><br><br>
+
+                           </p>
+                       </div>
+                   </div>
+
+                   <div class="col-1-of-4">
+                       <div class="feature-box">
+                           <i class="feature-box__icon icon-basic-compass"></i>
+                           <i><h3 class="heading-tertiary u-margin-bottom-small">Albert Einstein</h3></i>
+                           <p class="feature-box__text">
+                              <i>Education is what remains after one has forgotten what one has learned in school.</i><br><br>
+                           </p>
+                       </div>
+                   </div>
+
+                   <div class="col-1-of-4">
+                       <div class="feature-box">
+                           <i class="feature-box__icon icon-basic-map"></i>
+                           <i><h3 class="heading-tertiary u-margin-bottom-small">Steve Jobs</h3></i>
+                            <p class="feature-box__text">
+                               <i>Computers themselves, and software yet to be developed, will revolutionize the way we learn.</i><br>
+                           </p>
+                       </div>
+                   </div>
+
+                   <div class="col-1-of-4">
+                       <div class="feature-box">
+                           <i class="feature-box__icon icon-basic-heart"></i>
+                           <i><h3 class="heading-tertiary u-margin-bottom-small">Elon Musk</h3></i>
+                           <p class="feature-box__text">
+                               <i>Failure is an option here. If things are not failing, you are not innovating enough.</i><br><br>
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="u-center-text u-margin-top-huge">
+                   <a href="#" class="btn-text" onclick="window.open('{% static "css/araLena.pdf" %}', '_blank', 'fullscreen=yes');">View detailed work resume</a>
+
+               </div>
+           </section>
+
+         </main>
+     </body>
+ </html>
+
+{% endblock %}
